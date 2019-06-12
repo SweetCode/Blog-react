@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux'
+import store from './store/index'
+import 'antd/dist/antd.css'
+
+import Main from './pages/main/Main'
 
 function App() {
   return (
-    <div>
-      helloWorld
-    </div>
+    <Provider store={store}>
+      <Main></Main>
+    </Provider>
   );
 }
 

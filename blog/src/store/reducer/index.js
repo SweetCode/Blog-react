@@ -1,5 +1,7 @@
-import * as main from './main'
+import main from './main'
 
-export default {
-    ...main
-}
+import { combineReducers } from 'redux'
+
+export default combineReducers({
+    main
+})

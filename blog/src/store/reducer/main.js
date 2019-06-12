@@ -1,15 +1,16 @@
-import createReducer from 'createReduce'
+import createReducer from '../../util/createReducer'
+import { MAIN } from '../key' 
 
 const initState = {
     name : 'world'
 }
 
 const actionHandle = {
-    [type] : (state,action)=>{
+    [MAIN] : (state,action)=>{
         return {
             name : action.payload.name
         }
     }
 }
 
-export default createReducer()
+export default createReducer(initState,actionHandle)
