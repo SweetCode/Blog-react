@@ -3,8 +3,8 @@ export default function createAction(type, createHandle, metaHandle){
         type,
         payload: {},
         meta:  {
-            resolved: ()=>{},
-            rejected: ()=>{}
+            resolved:()=>{},
+            rejected:()=>{}
         }
     }
     return (...arg) =>{
