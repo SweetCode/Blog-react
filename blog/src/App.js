@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
 import { Provider } from 'react-redux'
 import store from './store/index'
-import 'antd/dist/antd.css'
+import './style/index.scss'
 
 import Main from './pages/main/Main'
 
